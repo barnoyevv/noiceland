@@ -1,0 +1,48 @@
+.main2 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 155px;
+  gap: 60px;
+}
+.main2 .main2-item {
+  max-width: 370px;
+  padding: 0px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.main2 .main2-item img {
+  width: 100%;
+  height: 60%;
+}
+.main2 .main2-item .main2-item-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.main2 .main2-item .main2-item-desc .main2-paragraf1 {
+  font-size: 10px;
+  font-family: "libre";
+  line-height: 12px;
+  color: #999999;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.main2 .main2-item .main2-item-desc h2 {
+  font-size: 24px;
+  font-family: "tenor";
+  line-height: 28px;
+  color: #000000;
+  text-transform: uppercase;
+}
+.main2 .main2-item .main2-item-desc .main2-paragraf2 {
+  font-size: 10px;
+  font-family: "libre";
+  line-height: 12px;
+  color: #000;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}/*# sourceMappingURL=main2.css.map */

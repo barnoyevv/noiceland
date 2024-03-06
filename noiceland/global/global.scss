@@ -1,0 +1,73 @@
+@import url(../footer/footer.css);
+@import url(../main/main.css);
+@import url(../header/header.css);
+@font-face {
+	font-family: "rubik";
+	src: url(../../font/Rubik/static/Rubik-Regular.ttf) format(truetype);
+}
+@font-face {
+	font-family: "libre";
+	src: url(../../font/Libre_Franklin/static/LibreFranklin-Regular.ttf) format(truetype);
+}
+@font-face {
+	font-family: "tenor";
+	src: url(../../font/Tenor_Sans/TenorSans-Regular.ttf) format(truetype);
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+}
+@mixin text ($f-size,$f-family,$l-height){
+	font-size: $f-size;
+	font-family: $f-family;
+	line-height: $l-height;
+}
+@mixin btn ($width,$height) {
+	width: $width;
+	height: $height;
+}
+%btn-change{
+	cursor: pointer;
+	border-radius: 2px;
+}
+.container{
+	padding-left: 120px;
+	padding-right: 120px;
+	.main-btn{
+		@include btn(205px, 54px);
+		@extend %btn-change;
+		@include text(10px, "fibre",12px);
+		color: #000;
+		text-align: center;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		background-color: transparent;
+
+	}
+	.footer-btn{
+		@include btn(80px, 50px);
+		@include text(12px, "fibre",14px);
+		color: #fff;
+		border: none;
+		cursor: pointer;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		background-color: #000;
+
+	}
+}
+@media (max-width:1000px) {
+	.container{
+		padding-left: 80px;
+		padding-right: 80px;
+	}
+}
+@media (max-width:700px) {
+	.container{
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+}
