@@ -1,49 +1,124 @@
 @import url(./main1/main1.css);
 @import url(./main2/main2.css);
-.main {
+@import url(./main3/main3.css);
+@import url(./main4/main4.css);
+.main5 {
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding-top: 200px;
-}
-.main .main-item {
-  max-width: 800px;
-  padding: 0px 10px;
+  padding-top: 160px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  align-items: center;
 }
-.main .main-item img {
+.main5 .main5-header {
+  max-width: 500px;
+  display: grid;
+  gap: 11px;
+  padding-bottom: 100px;
+}
+.main5 .main5-header .main5-header-box {
+  max-width: 130px;
+  padding: 8px 16px;
+  background-color: #F3F7F2;
+  margin: 0px auto;
+  border-radius: 5px;
+  text-align: center;
+}
+.main5 .main5-header .main5-header-box p {
+  font-size: 18px;
+  font-family: "roboto";
+  line-height: 32px;
+  color: #153C3C;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.main5 .main5-header h2 {
+  font-size: 56px;
+  font-family: "roboto";
+  line-height: 64px;
+  color: #172426;
+  text-align: center;
+  letter-spacing: 2.5px;
+  font-weight: 400;
+}
+
+.main5-box {
   width: 100%;
-  height: 70%;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 130px 130px 130px 130px;
+  gap: 40px;
 }
-.main .main-item .main-item-desc {
-  display: flex;
-  flex-direction: column;
+.main5-box .main5-box-item {
+  padding: 44px 40px;
+  background-color: #F2F8F8;
+  display: grid;
+  grid-template-columns: 200px 50px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+}
+.main5-box .main5-box-item p {
+  font-size: 21px;
+  font-family: "roboto";
+  line-height: 32px;
+  color: #172426;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+.main5-box .main5-box-item span {
+  font-size: 21px;
+  color: #172426;
+  cursor: pointer;
+}
+
+.main5-footer {
+  width: 100%;
+  max-height: 350px;
+  background-image: url(../../media/main5.jpg);
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  gap: 35px;
+  padding: 65px;
+  grid-template-rows: auto auto;
+  align-items: center;
+  margin-top: 120px;
+  border-radius: 10px;
+}
+.main5-footer h2 {
+  font-size: 36px;
+  font-family: "roboto";
+  line-height: 48px;
+  color: #fff;
+  letter-spacing: 1.6px;
+  font-weight: 400;
+  max-width: 454px;
+}
+.main5-footer .main5-footer-desc {
+  display: grid;
+  grid-template-columns: 75px 125px 145px;
+  align-items: center;
   gap: 15px;
 }
-.main .main-item .main-item-desc .main-paragraf1 {
-  font-size: 10px;
-  font-family: "libre";
-  line-height: 12px;
-  color: #999999;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+.main5-footer .main5-footer-desc p:nth-child(1) {
+  font-size: 40px;
+  font-family: "roboto";
+  line-height: 48px;
+  color: #ADC9A6;
+  font-weight: 400;
 }
-.main .main-item .main-item-desc h2 {
-  font-size: 24px;
-  font-family: "tenor";
-  line-height: 28px;
-  color: #000000;
-  text-transform: uppercase;
+.main5-footer .main5-footer-desc p:nth-child(2) {
+  font-size: 12px;
+  font-family: "roboto";
+  line-height: 24px;
+  color: #DDE4E4;
+  font-weight: 400;
+  letter-spacing: 0.25px;
 }
-.main .main-item .main-item-desc .main-paragraf2 {
-  font-size: 10px;
-  font-family: "libre";
-  line-height: 12px;
-  color: #000;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+
+@media (max-width: 1000px) {
+  .main5-box {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }/*# sourceMappingURL=main.css.map */

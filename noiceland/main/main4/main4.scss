@@ -3,19 +3,19 @@
 	font-family: $f-family;
 	line-height: $l-height;
 }
-.main1{
+.main4{
 	width: 100%;
 	padding-top: 160px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	.main1-header{
-		max-width: 620px;
+	.main4-header{
+		max-width: 450px;
 		display: grid;
 		gap: 11px;
 		padding-bottom: 100px;
-		.main1-header-box{
-			max-width: 170px;
+		.main4-header-box{
+			max-width: 130px;
 			padding: 8px 16px;
 			background-color: #F3F7F2;
 			margin: 0px auto;
@@ -37,12 +37,12 @@
 		}
 	}
 }
-.main1-box{
+.main4-box{
 	width: 100%;
 	display: grid;
 	grid-template-columns: auto auto;
 	gap: 40px;
-	.main1-box-item{
+	.main4-box-item{
 		padding: 40px 60px;
 		background-color: #F2F8F8;
 		display: grid;
@@ -61,7 +61,7 @@
 	}
 }
 @media (max-width: 1000px) {
-	.main1-box{
+	.main4-box{
 		display: flex;
 		flex-wrap: wrap;
 	}

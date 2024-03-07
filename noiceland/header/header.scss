@@ -1,105 +1,43 @@
+@import url(./nav/nav.css);
 @mixin text ($f-size,$f-family,$l-height){
 	font-size: $f-size;
 	font-family: $f-family;
 	line-height: $l-height;
 }
-@import url(./nav/nav.css);
-.header{
+.main{
 	width: 100%;
-	height: 70%;
-	display: flex;
-	padding-top: 60px;
-	.img{
-		max-width: 60%;
-		height: 100%;
-		img{
-			width: 100%;
-			height: 100%;
-		}
-	}
-}
-.header-desc{
-	max-width: 470px;
-	max-height: 345px;
-	padding-left: 50px;
-	display: flex;
-	flex-direction: column;
-	gap: 20px;
-	.first{
-		@include text(12px,"libre",14px);
-		text-transform: uppercase;
-		font-weight: 400;
-		letter-spacing: 1px;
-		color: #999999;
-	}
-	h2{
-		@include text(36px,"tenor",42px);
-		text-transform: uppercase;
-		font-weight: 400;
-		color: #000;
-	}
-	.second{
-		@include text(16px,"libre",24px);
-		font-weight: 400;
-		color: #666666;
-	}
-	.third{
-		@include text(12px,"libre",14px);
-		text-transform: uppercase;
-		font-weight: 700;
-		letter-spacing: 1px;
-		color: #000;
-	}
-}
-@media (max-width: 1400px) {
-	.header-desc{
-		gap: 10px;
-		.first{
-			@include text(8px,"libre",10px);
+	padding-top: 100px;
+	.main-header{
+		max-width: 570px;
+		display: grid;
+		align-items: center;
+		gap: 11px;
+		padding-bottom: 100px;
+		.main-header-box{
+			max-width: 290px;
+			padding: 8px 16px;
+			background-color: #F3F7F2;
+			margin: 0px auto;
+			border-radius: 5px;
+			text-align: center;
+			p{
+				@include text(18px,"roboto",32px);
+				color: #153C3C;
+				text-transform: uppercase;
+			}
 		}
 		h2{
-			@include text(22px,"tenor",28px);
-		}
-		.second{
-			@include text(10px,"libre",16px);
-		}
-		.third{
-			@include text(8px,"libre",10px);
+			@include text(62px,"roboto",80px);
+			color: #172426;
+			text-align: center;
+			letter-spacing: 3px;
+			font-weight: 400;
 		}
 	}
-}
-@media (max-width: 900px) {
-	.header-desc{
-		padding-left: 30px;
-		.first{
-			@include text(6px,"libre",8px);
-		}
-		h2{
-			@include text(14px,"tenor",20px);
-		}
-		.second{
-			@include text(8px,"libre",14px);
-		}
-		.third{
-			@include text(6px,"libre",8px);
-		}
-	}
-}
-@media (max-width: 600px) {
-	.header-desc{
-		padding-left: 20px;
-		gap: 5px;
-		.first{
-			@include text(4px,"libre",6px);
-		}
-		h2{
-			@include text(10px,"tenor",16px);
-		}
-		.second{
-			@include text(6px,"libre",12px);
-		}
-		.third{
-			@include text(4px,"libre",6px);
-		}
+	img{
+		width: 100%;
+		max-height: 600px;
+		object-fit: cover;
+		border-radius: 10px;
 	}
 }

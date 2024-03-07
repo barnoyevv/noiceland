@@ -5,43 +5,64 @@
 }
 .main2{
 	width: 100%;
+	padding-top: 160px;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	padding-top: 155px;
-	gap: 60px;
-	.main2-item{
-		max-width: 370px;
-		padding: 0px 10px;
-		display: flex;
-		flex-direction: column;
-		gap: 20px;
+	flex-direction: column;
+	align-items: center;
+	.main2-header{
+		max-width: 450px;
+		display: grid;
+		gap: 11px;
+		padding-bottom: 100px;
+		.main2-header-box{
+			max-width: 130px;
+			padding: 8px 16px;
+			background-color: #F3F7F2;
+			margin: 0px auto;
+			border-radius: 5px;
+			text-align: center;
+			p{
+				@include text(18px,"roboto",32px);
+				color: #153C3C;
+				text-transform: uppercase;
+				font-weight: 400;
+			}
+		}
+		h2{
+			@include text(56px,"roboto",64px);
+			color: #172426;
+			text-align: center;
+			letter-spacing: 2.5px;
+			font-weight: 400;
+		}
+	}
+}
+.main2-box{
+	width: 100%;
+	display: grid;
+	grid-template-columns: auto auto;
+	gap: 40px;
+	.main2-box-item{
+		padding: 40px 60px;
+		background-color: #F2F8F8;
+		display: grid;
+		gap: 40px;
+		border-radius: 10px;
+		p{
+			@include text(21px,"roboto",32px);
+			color: #172426;
+			letter-spacing: 1px;
+			font-weight: 400;
+		}
 		img{
 			width: 100%;
-			height: 60%;
+			height: 100%;
 		}
-		.main2-item-desc{
-			display: flex;
-			flex-direction: column;
-			gap: 15px;
-			.main2-paragraf1{
-				@include text(10px, "libre", 12px);
-				color: #999999;
-				text-transform: uppercase;
-				letter-spacing: 1px
-			}
-			h2{
-				@include text(24px, "tenor", 28px);
-				color: #000000;
-				text-transform: uppercase;
-			}
-			.main2-paragraf2{
-				@include text(10px, "libre", 12px);
-				color: #000;
-				font-weight: 700;
-				text-transform: uppercase;
-				letter-spacing: 1px;
-			}
-		}
+	}
+}
+@media (max-width: 1000px) {
+	.main2-box{
+		display: flex;
+		flex-wrap: wrap;
 	}
 }

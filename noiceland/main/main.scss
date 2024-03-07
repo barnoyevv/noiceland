@@ -1,48 +1,114 @@
 @import url(./main1/main1.css);
 @import url(./main2/main2.css);
+@import url(./main3/main3.css);
+@import url(./main4/main4.css);
 @mixin text ($f-size,$f-family,$l-height){
 	font-size: $f-size;
 	font-family: $f-family;
 	line-height: $l-height;
 }
-.main{
+.main5{
 	width: 100%;
+	padding-top: 160px;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	padding-top: 200px;
-	.main-item{
-		max-width: 800px;
-		padding: 0px 10px;
+	flex-direction: column;
+	align-items: center;
+	.main5-header{
+		max-width: 500px;
+		display: grid;
+		gap: 11px;
+		padding-bottom: 100px;
+		.main5-header-box{
+			max-width: 130px;
+			padding: 8px 16px;
+			background-color: #F3F7F2;
+			margin: 0px auto;
+			border-radius: 5px;
+			text-align: center;
+			p{
+				@include text(18px,"roboto",32px);
+				color: #153C3C;
+				text-transform: uppercase;
+				font-weight: 400;
+			}
+		}
+		h2{
+			@include text(56px,"roboto",64px);
+			color: #172426;
+			text-align: center;
+			letter-spacing: 2.5px;
+			font-weight: 400;
+		}
+	}
+}
+.main5-box{
+	width: 100%;
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: 130px 130px 130px 130px;
+	gap: 40px;
+	.main5-box-item{
+		padding: 44px 40px;
+		background-color: #F2F8F8;
+		display: grid;
+		grid-template-columns: 200px 50px;
+		justify-content: space-between;
+		align-items: center;
+		border-radius: 10px;
+		p{
+			@include text(21px,"roboto",32px);
+			color: #172426;
+			letter-spacing: 1px;
+			font-weight: 400;
+		}
+		span{
+			font-size: 21px;
+			color: #172426;
+			cursor: pointer;
+		}
+	}
+}
+.main5-footer{
+	width: 100%;
+	max-height: 350px;
+	background-image: url(../../media/main5.jpg);
+	background-position: center;
+	background-size: cover;
+	display: grid;
+	gap: 35px;
+	padding: 65px;
+	grid-template-rows: auto auto;
+	align-items: center;
+	margin-top: 120px;
+	border-radius: 10px;
+	h2{
+		@include text(36px,"roboto",48px);
+		color: #fff;
+		letter-spacing: 1.6px;
+		font-weight: 400;
+		max-width: 454px;
+	}
+	.main5-footer-desc{
+		display: grid;
+		grid-template-columns: 75px 125px 145px;
+		align-items: center;
+		gap: 15px;
+		p:nth-child(1){
+			@include text(40px,"roboto",48px);
+			color: #ADC9A6;
+			font-weight: 400;
+		}
+		p:nth-child(2){
+			@include text(12px,"roboto",24px);
+			color: #DDE4E4;
+			font-weight: 400;
+			letter-spacing: 0.25px;
+		}
+	}
+}
+@media (max-width: 1000px) {
+	.main5-box{
 		display: flex;
-		flex-direction: column;
-		gap: 20px;
-		img{
-			width: 100%;
-			height: 70%;
-		}
-		.main-item-desc{
-			display: flex;
-			flex-direction: column;
-			gap: 15px;
-			.main-paragraf1{
-				@include text(10px, "libre", 12px);
-				color: #999999;
-				text-transform: uppercase;
-				letter-spacing: 1px
-			}
-			h2{
-				@include text(24px, "tenor", 28px);
-				color: #000000;
-				text-transform: uppercase;
-			}
-			.main-paragraf2{
-				@include text(10px, "libre", 12px);
-				color: #000;
-				font-weight: 700;
-				text-transform: uppercase;
-				letter-spacing: 1px;
-			}
-		}
+		flex-wrap: wrap;
 	}
 }

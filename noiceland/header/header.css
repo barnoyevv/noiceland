@@ -1,134 +1,43 @@
 @import url(./nav/nav.css);
-.header {
+.main {
   width: 100%;
-  height: 70%;
-  display: flex;
-  padding-top: 60px;
+  padding-top: 100px;
 }
-.header .img {
-  max-width: 60%;
-  height: 100%;
+.main .main-header {
+  max-width: 570px;
+  display: grid;
+  align-items: center;
+  gap: 11px;
+  padding-bottom: 100px;
 }
-.header .img img {
+.main .main-header .main-header-box {
+  max-width: 290px;
+  padding: 8px 16px;
+  background-color: #F3F7F2;
+  margin: 0px auto;
+  border-radius: 5px;
+  text-align: center;
+}
+.main .main-header .main-header-box p {
+  font-size: 18px;
+  font-family: "roboto";
+  line-height: 32px;
+  color: #153C3C;
+  text-transform: uppercase;
+}
+.main .main-header h2 {
+  font-size: 62px;
+  font-family: "roboto";
+  line-height: 80px;
+  color: #172426;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 400;
+}
+.main img {
   width: 100%;
-  height: 100%;
-}
-
-.header-desc {
-  max-width: 470px;
-  max-height: 345px;
-  padding-left: 50px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.header-desc .first {
-  font-size: 12px;
-  font-family: "libre";
-  line-height: 14px;
-  text-transform: uppercase;
-  font-weight: 400;
-  letter-spacing: 1px;
-  color: #999999;
-}
-.header-desc h2 {
-  font-size: 36px;
-  font-family: "tenor";
-  line-height: 42px;
-  text-transform: uppercase;
-  font-weight: 400;
-  color: #000;
-}
-.header-desc .second {
-  font-size: 16px;
-  font-family: "libre";
-  line-height: 24px;
-  font-weight: 400;
-  color: #666666;
-}
-.header-desc .third {
-  font-size: 12px;
-  font-family: "libre";
-  line-height: 14px;
-  text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: 1px;
-  color: #000;
-}
-
-@media (max-width: 1400px) {
-  .header-desc {
-    gap: 10px;
-  }
-  .header-desc .first {
-    font-size: 8px;
-    font-family: "libre";
-    line-height: 10px;
-  }
-  .header-desc h2 {
-    font-size: 22px;
-    font-family: "tenor";
-    line-height: 28px;
-  }
-  .header-desc .second {
-    font-size: 10px;
-    font-family: "libre";
-    line-height: 16px;
-  }
-  .header-desc .third {
-    font-size: 8px;
-    font-family: "libre";
-    line-height: 10px;
-  }
-}
-@media (max-width: 900px) {
-  .header-desc {
-    padding-left: 30px;
-  }
-  .header-desc .first {
-    font-size: 6px;
-    font-family: "libre";
-    line-height: 8px;
-  }
-  .header-desc h2 {
-    font-size: 14px;
-    font-family: "tenor";
-    line-height: 20px;
-  }
-  .header-desc .second {
-    font-size: 8px;
-    font-family: "libre";
-    line-height: 14px;
-  }
-  .header-desc .third {
-    font-size: 6px;
-    font-family: "libre";
-    line-height: 8px;
-  }
-}
-@media (max-width: 600px) {
-  .header-desc {
-    padding-left: 20px;
-    gap: 5px;
-  }
-  .header-desc .first {
-    font-size: 4px;
-    font-family: "libre";
-    line-height: 6px;
-  }
-  .header-desc h2 {
-    font-size: 10px;
-    font-family: "tenor";
-    line-height: 16px;
-  }
-  .header-desc .second {
-    font-size: 6px;
-    font-family: "libre";
-    line-height: 12px;
-  }
-  .header-desc .third {
-    font-size: 4px;
-    font-family: "libre";
-    line-height: 6px;
-  }
+  max-height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
 }/*# sourceMappingURL=header.css.map */

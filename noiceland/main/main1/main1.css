@@ -1,47 +1,71 @@
 .main1 {
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding-top: 35px;
-}
-.main1 .main1-item {
-  max-width: 550px;
-  padding: 25px 10px;
+  padding-top: 160px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  align-items: center;
 }
-.main1 .main1-item img {
+.main1 .main1-header {
+  max-width: 620px;
+  display: grid;
+  gap: 11px;
+  padding-bottom: 100px;
+}
+.main1 .main1-header .main1-header-box {
+  max-width: 170px;
+  padding: 8px 16px;
+  background-color: #F3F7F2;
+  margin: 0px auto;
+  border-radius: 5px;
+  text-align: center;
+}
+.main1 .main1-header .main1-header-box p {
+  font-size: 18px;
+  font-family: "roboto";
+  line-height: 32px;
+  color: #153C3C;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.main1 .main1-header h2 {
+  font-size: 56px;
+  font-family: "roboto";
+  line-height: 64px;
+  color: #172426;
+  text-align: center;
+  letter-spacing: 2.5px;
+  font-weight: 400;
+}
+
+.main1-box {
   width: 100%;
-  height: 60%;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 40px;
 }
-.main1 .main1-item .main1-item-desc {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+.main1-box .main1-box-item {
+  padding: 40px 60px;
+  background-color: #F2F8F8;
+  display: grid;
+  gap: 40px;
+  border-radius: 10px;
 }
-.main1 .main1-item .main1-item-desc .main1-paragraf1 {
-  font-size: 10px;
-  font-family: "libre";
-  line-height: 12px;
-  color: #999999;
-  text-transform: uppercase;
+.main1-box .main1-box-item p {
+  font-size: 21px;
+  font-family: "roboto";
+  line-height: 32px;
+  color: #172426;
   letter-spacing: 1px;
+  font-weight: 400;
 }
-.main1 .main1-item .main1-item-desc h2 {
-  font-size: 24px;
-  font-family: "tenor";
-  line-height: 28px;
-  color: #000000;
-  text-transform: uppercase;
+.main1-box .main1-box-item img {
+  width: 100%;
+  height: 100%;
 }
-.main1 .main1-item .main1-item-desc .main1-paragraf2 {
-  font-size: 10px;
-  font-family: "libre";
-  line-height: 12px;
-  color: #000;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+
+@media (max-width: 1000px) {
+  .main1-box {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }/*# sourceMappingURL=main1.css.map */
